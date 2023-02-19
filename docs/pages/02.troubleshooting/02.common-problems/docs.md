@@ -39,6 +39,12 @@ This will cause the dropdown to be attached to the modal, rather than the `<body
 $.fn.modal.Constructor.prototype.enforceFocus = function() {};
 ```
 
+
+### Multiple select2 in separate modals on the same page, only one works.
+Make sure that every select element has its unique id to prevent the issue. See [#5767](https://github.com/select2/select2/issues/5767)
+
+
+
 See [this answer](https://stackoverflow.com/questions/18487056/select2-doesnt-work-when-embedded-in-a-bootstrap-modal/19574076#19574076) for more information.
 
 ### The dropdown becomes misaligned/displaced when using pinch-zoom.
